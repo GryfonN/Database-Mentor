@@ -1,0 +1,26 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="BundlesViewImpl.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.admin.cards.bundles.BundlesViewImpl.MyStyle"/>
+
+    <g:HTMLPanel width="100%"
+                 styleName="{style.cardBody-BundlesCard}">
+
+        <h4 class="{style.cardTitle-BundlesCard} lato-font">Bundle Management</h4>
+
+        <p>
+            There are all bundles loaded to Database-Mentor system. By turning on/off you can setup login listbox offer
+            for user. All turned on bundles are visible in login window and prepare for creating database connection.
+        </p>
+
+        <g:TextBox ui:field="errorTextBox"
+                   styleName="{style.errorTextBox-BundlesCard}"
+                   visible="false"
+                   enabled="false"
+                   readOnly="true"/>
+
+        <g:FlowPanel ui:field="bundlesPanel"/>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

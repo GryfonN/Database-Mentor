@@ -1,0 +1,123 @@
+.cardBody-ProcedureCard {
+    min-height: 600px;
+    position: relative;
+    border: 10px solid #1abc9c;
+    padding: 10px;
+    background-color: #ecf0f1;
+    -webkit-box-shadow: 0px 0px 8px #000000;
+    -moz-box-shadow: 0px 0px 8px #000000;
+    -ms-box-shadow: 0px 0px 8px #000000;
+    -o-box-shadow: 0px 0px 8px #000000;
+    box-shadow: 0px 0px 8px #000000;
+}
+
+.cardTitle-ProcedureCard {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cardItem-ProcedureCard {
+    margin-bottom: 15px;
+}
+
+.procedureListButton-ProcedureCard {
+    border-radius: 1px;
+    border: 2px solid #3498db;
+    color: #ffffff;
+    background-color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    line-height: 15px;
+    padding: 6px 13px;
+    position: relative;
+    vertical-align: middle;
+    /*btn-lg mam*/
+    /*btn-block*/
+    white-space: normal;
+}
+
+.procedureListButton-ProcedureCard:hover,
+.procedureListButton-ProcedureCard:focus,
+.procedureListButton-ProcedureCard:active {
+    color: #ffffff;
+    background-color: #5dade2;
+    border-color: #5dade2;
+}
+
+.procedure-detail-label {
+    height: 20px;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+}
+
+.procedure-textarea {
+    height: 330px;
+    resize: vertical;
+    display: block;
+    background-color: #34495e;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px 12px;
+    text-align: left;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.289;
+}
+
+.lock-textarea {
+    resize: none;
+}
+
+.procedureRunForm-ProcedureCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.procedureRunButton-ProcedureCard {
+    font-weight: bold !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resultWrapper-ProcedureCard {
+    width: 95%;
+    border-radius: 1px;
+    border: 2px solid #3498db;
+    color: #ffffff;
+    background-color: #3498db;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    line-height: 15px;
+    padding: 6px 13px;
+    position: relative;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.result-ProcedureCard {
+    border-radius: 1px;
+    border: 2px solid #1abc9c;
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden;
+    line-height: 15px;
+    padding: 6px 13px;
+    position: relative;
+    vertical-align: middle;
+}

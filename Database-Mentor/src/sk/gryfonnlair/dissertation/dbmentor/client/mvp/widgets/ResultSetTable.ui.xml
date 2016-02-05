@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="ResultSetTable.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.widgets.ResultSetTable.MyStyle"/>
+
+    <g:HTMLPanel>
+        <g:Label ui:field="resultSetLabel"/>
+        <g:ScrollPanel addStyleNames="{style.resultsettable-scrollpanel}">
+            <g:FlowPanel ui:field="rootFlowPanel"/>
+        </g:ScrollPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

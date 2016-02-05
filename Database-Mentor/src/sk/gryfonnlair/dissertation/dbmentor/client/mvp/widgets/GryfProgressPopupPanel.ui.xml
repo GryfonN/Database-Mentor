@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:with type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.widgets.GryfProgressPopupPanel.Resources"
+             field="resources"/>
+
+    <ui:style field="style" src="GryfProgressPopupPanel.css"/>
+
+    <g:Image resource="{resources.gryfProgressPopupImage}"
+             addStyleNames="{style.onTop-GryfProgress}"
+             width="300px"
+             height="300px"/>
+</ui:UiBinder>

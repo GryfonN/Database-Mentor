@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="UserHeaderViewImpl.css"/>
+
+    <g:HTMLPanel styleName="{style.mainHeader-UserHeader}">
+
+        <g:VerticalPanel width="100%" horizontalAlignment="ALIGN_CENTER">
+            <g:HorizontalPanel
+                    styleName="{style.fistHeader-UserHeader}"
+                    horizontalAlignment="ALIGN_CENTER"
+                    verticalAlignment="ALIGN_MIDDLE">
+                <g:Label ui:field="userNameLabel"
+                         styleName="fui-user {style.firstHeaderLabel-UserHeader}"/>
+                <g:Label ui:field="databaseConnectorTypeLabel"
+                         styleName="fui-arrow-right {style.firstHeaderLabel-UserHeader}"/>
+                <g:Label ui:field="databaseUrlLabel"
+                         styleName="fui-location {style.firstHeaderLabel-UserHeader}"/>
+                <g:Label ui:field="databaseNameLabel"
+                         styleName="fui-checkbox-unchecked {style.firstHeaderLabel-UserHeader}"/>
+                <g:Button ui:field="logoutButton"
+                          styleName="btn btn-block btn-lg btn-danger {style.logoutBtn-UserHeader}"
+                          text="Log out"/>
+            </g:HorizontalPanel>
+
+            <g:Image ui:field="logo"
+                     styleName="{style.logo-UserHeader}"/>
+
+            <g:HorizontalPanel width="1000px" horizontalAlignment="ALIGN_CENTER">
+                <g:Button ui:field="welcomeButton"
+                          text="WELCOME"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-UserHeader}"/>
+                <g:Button ui:field="quickCodeButton"
+                          text="QUICK"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-UserHeader}"/>
+                <g:Button ui:field="proceduresButton"
+                          text="PROCEDURES"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-UserHeader}"/>
+                <g:Button ui:field="functionsButton"
+                          text="FUNCTIONS"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-UserHeader}"/>
+                <g:Button ui:field="debugerButton"
+                          text="DEBUGGER"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-UserHeader}"/>
+            </g:HorizontalPanel>
+
+        </g:VerticalPanel>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

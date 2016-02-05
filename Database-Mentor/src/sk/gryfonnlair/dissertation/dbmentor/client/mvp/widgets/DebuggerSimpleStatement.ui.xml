@@ -1,0 +1,21 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:style field="style" src="DebuggerSimpleStatement.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.widgets.DebuggerSimpleStatement.MyStyle"/>
+
+    <g:HTMLPanel styleName="{style.stmMain-DSS}">
+
+        <g:Button ui:field="stmButton"
+                  styleName="{style.stmButton-DSS}}"/>
+        <g:Image ui:field="loadingBar"
+                 styleName="{style.progressBar-DSS}"
+                 visible="false"/>
+
+        <g:VerticalPanel ui:field="stmResultPanel"
+                         width="100%"
+                         styleName="{style.stmResultPanel-DSS}"
+                         horizontalAlignment="ALIGN_CENTER"
+                         verticalAlignment="ALIGN_TOP"/>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

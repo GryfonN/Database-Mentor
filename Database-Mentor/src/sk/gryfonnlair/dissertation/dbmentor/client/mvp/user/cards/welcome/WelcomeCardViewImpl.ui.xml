@@ -1,0 +1,33 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="WelcomeCardViewImpl.css"/>
+
+    <g:HTMLPanel width="100%"
+                 styleName="{style.cardBody-WelcomeCard}">
+
+        <h4 class="{style.cardTitle-WelcomeCard} lato-font">Welcome</h4>
+
+        <div id="sliderFrame">
+            <div id="slider">
+                <img src="images/welcome_slides/slide1.png" alt="Free sql editor by CodeMirror"/>
+                <img src="images/welcome_slides/slide2.png" alt="Table data presentation"/>
+                <img src="images/welcome_slides/slide3.png" alt="Procedures and functions scanning and executing"/>
+                <img src="images/welcome_slides/slide4.png" alt="Generated forms to execute procedure or function"/>
+                <img src="images/welcome_slides/slide5.png" alt="Debugger:Parse SQL to variations by rules"/>
+                <img src="images/welcome_slides/slide6.png" alt="Debugger:Executing each variation of SQL"/>
+            </div>
+        </div>
+
+        <br/>
+
+        <p style="{style.cardText-WelcomeCard}">
+            Database Mentor web application is focused on students, that are learning database systems, language SQL.
+            Its main task is tu show students basic functions like statements executing. Also provide easy way to
+            execute functions and procedures that are stored in database system by generated forms. Main benefit is
+            debugger that generates variations from select statement and show students step results. Generation is
+            handled by rules that are provided from application. Each rule has different logic and produce different
+            variations of SQL statement.
+        </p>
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="AdminAppTemplate.css"/>
+
+    <g:FlowPanel
+            styleName="{style.main-AdminAppTemplate}">
+        <g:SimplePanel ui:field="header"
+                       styleName="{style.header-AdminAppTemplate}"/>
+        <g:SimplePanel ui:field="content"
+                       styleName="{style.content-AdminAppTemplate}"/>
+        <!--len pre vyzor ze stranka nekonci hned na obrazovke dole-->
+        <g:HTMLPanel>
+            <br/>
+        </g:HTMLPanel>
+    </g:FlowPanel>
+</ui:UiBinder>

@@ -1,0 +1,47 @@
+body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color: rgb(52, 73, 94);
+    padding: 0px;
+    margin: 0px;
+    background: url("images/bg_seamless.jpg") repeat fixed 50% 0px rgb(0, 0, 0);
+    background-color: #bdc3c7;
+}
+
+.login-background {
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000000 url('images/bg.jpg') no-repeat fixed center;
+}
+
+.lato-font {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    color: rgb(52, 73, 94);
+}
+
+#loginWindow-Login {
+    /*kedze aplikujem obrazok na div element musim tu mat css*/
+    background: url(./images/loginWindow.png) 0 0 no-repeat;
+    background-size: 940px 704px;
+    width: 940px;
+    height: 704px;
+    color: #ffffff;
+    margin-bottom: 77px;
+    padding: 38px 35px 267px;
+    position: absolute;
+    top: 488px; /*136 ma img a + moja 1/2=352vyska login okna*/
+    left: 50%;
+    margin-top: -352px;
+    margin-left: -470px;
+}
+
+#error_div {
+    position: absolute;
+    left: -9999px;
+}
+
+/*div {*/
+/*border-color: blue;*/
+/*border-width: thin;*/
+/*border-style: dashed;*/
+/*}*/

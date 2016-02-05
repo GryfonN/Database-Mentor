@@ -1,0 +1,110 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="UploadViewImpl.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.admin.cards.upload.UploadViewImpl.MyStyle"/>
+
+    <g:HTMLPanel width="100%"
+                 styleName="{style.cardBody-UploadCard}">
+
+        <h4 class="{style.cardTitle-UploadCard} lato-font">Upload Bundle</h4>
+
+        <p>
+            For development of new bundles we provide this API library to download.
+        </p>
+
+        <!--DOWNLOAD API-->
+        <div class="btn btn-block btn-lg btn-warning lato-font {style.uploadButton-UploadCard}">
+            <a href="Database-Mentor-Api.jar"
+               target="_blank"
+               class="{style.downloadButtonLink-UploadCard}">
+                Download Database-Mentor-Api JAR file
+            </a>
+        </div>
+        <br/>
+
+        <p>
+            To upload new bundles to Database-Mentor please fill form below, every row is required.
+        </p>
+
+        <!--MODULE NALE-->
+        <h6 class="{style.cardLabel-UploadCard} lato-font">Bundle name</h6>
+        <g:TextBox ui:field="uploadBundleNameTextBox"
+                   styleName="form-control"/>
+
+        <!--DRIVER UPLOAD-->
+        <h6 class="{style.cardLabel-UploadCard} lato-font">Driver JAR File</h6>
+        <g:FormPanel ui:field="uploadDriverFormPanel">
+            <g:FlowPanel visible="false">
+                <g:TextBox
+                        visible="false"
+                        name="action"
+                        text="jdbc"/>
+                <g:FileUpload
+                        ui:field="uploadDriverFileUpload"
+                        name="jar_file"/>
+            </g:FlowPanel>
+        </g:FormPanel>
+        <!--fake-->
+        <div class="uploadDiv-UploadCard">
+            <g:Button ui:field="uploadDriverUploadButton"
+                      text="Upload"
+                      styleName="btn btn-block btn-lg btn-info {style.button-UploadCard} {style.inlineButton-UploadCard}"/>
+            <g:Button ui:field="uploadDriverBrowseButton"
+                      text="Browse"
+                      styleName="btn btn-block btn-lg btn-info {style.button-UploadCard} {style.inlineButton-UploadCard}"/>
+            <g:Label ui:field="uploadDriverPathLabel"
+                     text="Choose driver JAR file please ..."
+                     styleName="{style.uploadFilePath-UploadCard} lato-font"/>
+            <g:Image ui:field="uploadDriverProgressImage"
+                     visible="false"
+                     styleName="{style.progressBar-UploadCard} {style.progressBarHidden-UploadCard}"/>
+        </div>
+
+        <!--ORIGINAL MODULE UPLOAD-->
+        <h6 class="{style.cardLabel-UploadCard} lato-font">Module JAR file</h6>
+        <g:FormPanel ui:field="uploadModuleFormPanel">
+            <g:FlowPanel visible="false">
+                <g:TextBox
+                        visible="false"
+                        name="action"
+                        text="module"/>
+                <g:FileUpload
+                        ui:field="uploadModuleFileUpload"
+                        name="jar_file"/>
+            </g:FlowPanel>
+        </g:FormPanel>
+        <!--fake-->
+        <div class="uploadDiv-UploadCard">
+            <g:Button ui:field="uploadModuleUploadButton"
+                      text="Upload"
+                      styleName="btn btn-block btn-lg btn-info {style.button-UploadCard} {style.inlineButton-UploadCard}"/>
+            <g:Button ui:field="uploadModuleBrowseButton"
+                      text="Browse"
+                      styleName="btn btn-block btn-lg btn-info {style.button-UploadCard} {style.inlineButton-UploadCard}"/>
+            <g:Label ui:field="uploadModulePathLabel"
+                     text="Choose module JAR file please ..."
+                     styleName="{style.uploadFilePath-UploadCard} lato-font"/>
+            <g:Image ui:field="uploadModuleProgressImage"
+                     styleName="{style.progressBar-UploadCard}  {style.progressBarHidden-UploadCard}"/>
+        </div>
+
+        <!--MCL CALSS NAME-->
+        <h6 class="{style.cardLabel-UploadCard} lato-font">MCL Class full name</h6>
+        <g:TextBox ui:field="uploadBundleClassNameTextBox"
+                   styleName="form-control"/>
+
+        <br/>
+        <g:Button ui:field="uploadBundleUploadButton"
+                  text="Upload Bundle"
+                  styleName="btn btn-block btn-lg btn-primary {style.downloadButton-UploadCard}"/>
+        <br/>
+
+        <g:TextBox ui:field="uploadResultTextBox"
+                   styleName="{style.resultTextBox-UploadCard}"
+                   visible="false"
+                   enabled="false"
+                   readOnly="true"/>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

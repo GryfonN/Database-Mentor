@@ -1,0 +1,117 @@
+.logo-Login {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 0px;
+    width: 1200px;
+    height: 104px;
+    margin-top: 16px;
+}
+
+.errorTextBox-Login {
+    height: 40px !important;
+    position: absolute;
+    bottom: 0px;
+    background-color: #e74c3c;
+    text-align: center;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.9;
+    padding: 2px;
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+    outline: 0;
+    color: #ffffff;
+    border: 2px solid #e74c3c;
+
+}
+
+.loginWindowGreen-Login {
+    background-color: #1abc9c;
+    min-height: 473px;
+    max-width: 100%;
+    padding: 25px 25px 25px 170px;
+}
+
+.login-icon-Login {
+    left: 68px;
+    position: absolute;
+    top: 160px;
+    width: 96px;
+}
+
+.login-icon-Login > img {
+    display: block;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.login-icon-Login > h4 {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 34px;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+.login-icon-Login > h4 small {
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+.loginButton-Login {
+    height: 50px !important;
+    font-weight: bold;
+}
+
+.loginProgressImage-Login {
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+.listBox-Login {
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    height: 50px !important;
+    background: transparent !important;
+    overflow: hidden !important;
+    color: #ffffff;
+    font-size: 38px;
+    vertical-align: middle;
+    border: 0px;
+    left: 23px;
+}
+
+.listBoxDIV-Login {
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    height: 50px !important;
+    overflow: hidden !important;
+    /*nemama primary button od flt ale svoju nahrdu a to tieto dva riadky*/
+    background-color: #2852b0;
+    border-color: #2852b0;
+}
+
+.listBoxProgressImage-Login {
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    display: inline;
+}

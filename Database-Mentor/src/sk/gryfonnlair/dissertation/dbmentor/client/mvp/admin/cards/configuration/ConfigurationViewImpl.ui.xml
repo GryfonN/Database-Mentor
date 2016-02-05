@@ -1,0 +1,49 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="ConfigurationViewImpl.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.admin.cards.configuration.ConfigurationViewImpl.MyStyle"/>
+
+    <g:HTMLPanel width="100%"
+                 styleName="{style.cardBody-ConfigurationCard}">
+
+        <h4 class="{style.cardTitle-ConfigurationCard} lato-font">Configuration for Default Connection</h4>
+
+        <p>
+            Setup connection configuration file for default testing database. By default only Server version: 5.5.32
+            MySQL Community Server is supported for testing database.
+        </p>
+
+        <!--USER NAME-->
+        <h6 class="{style.cardLabel-ConfigurationCard} lato-font">User Name</h6>
+        <g:TextBox ui:field="userNameTextBox"
+                   styleName="form-control"/>
+
+        <!--USER PASS-->
+        <h6 class="{style.cardLabel-ConfigurationCard} lato-font">User Pass</h6>
+        <g:TextBox ui:field="userPassTextBox"
+                   styleName="form-control"/>
+
+        <!--URL-->
+        <h6 class="{style.cardLabel-ConfigurationCard} lato-font">Connection URL</h6>
+        <g:TextBox ui:field="urlTextBox"
+                   styleName="form-control"/>
+
+        <!--USER PASS-->
+        <h6 class="{style.cardLabel-ConfigurationCard} lato-font">Database Name</h6>
+        <g:TextBox ui:field="databaseTextBox"
+                   styleName="form-control"/>
+
+        <br/>
+        <g:Button ui:field="saveButton"
+                  text="Save Configuration"
+                  styleName="btn btn-block btn-lg btn-primary {style.saveButton-ConfigurationCard}"/>
+        <br/>
+
+        <g:TextBox ui:field="resultTextBox"
+                   styleName="{style.resultTextBox-ConfigurationCard}"
+                   visible="false"
+                   enabled="false"
+                   readOnly="true"/>
+    </g:HTMLPanel>
+</ui:UiBinder>

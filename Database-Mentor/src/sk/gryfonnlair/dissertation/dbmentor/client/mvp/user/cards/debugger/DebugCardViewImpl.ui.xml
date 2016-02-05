@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="DebugCardViewImpl.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.user.cards.debugger.DebugCardViewImpl.MyStyle"/>
+
+    <g:HTMLPanel width="100%"
+                 styleName="{style.cardBody-DebugCard}">
+
+        <h4 class="{style.cardTitle-DebugCard}">Select statement debugger</h4>
+
+        <!--result area na chyby ak v hlavnom nejde parse alebo je blby prikaz-->
+        <!--textarea na jeden statm-->
+        <!--checkboxy na pravidla vygenerovane-->
+        <!--run btn-->
+        <!--vertPanel pre list result-->
+        <!--v liste budu special widgety odo mna s button run na simple select a pod tym result area na ten konkretny select        -->
+
+        <!--result area-->
+        <g:TextArea ui:field="resultTextBox"
+                    styleName="{style.resultTextBox-DebugCard} {style.cardItem-DebugCard}"
+                    visible="false"
+                    enabled="false"
+                    readOnly="true"/>
+
+        <!--CODE area-->
+        <g:VerticalPanel ui:field="codeMirrorPanel"
+                         horizontalAlignment="ALIGN_CENTER"
+                         verticalAlignment="ALIGN_TOP"
+                         addStyleNames="{style.codeMirrorPanel-DebugCard} {style.cardItem-DebugCard}"/>
+
+        <g:HorizontalPanel width="100%"
+                           addStyleNames="{style.cardItem-DebugCard}">
+            <g:HTMLPanel styleName="{style.paragraph-DebugCard}">
+                <p>
+                    Write and test SELECT sql statement. Divide it by using rules, generate different variations,
+                    substring inner selects and more. Each result statement can be execute, compare results and see
+                    steps of progress for original statement.
+                </p>
+
+            </g:HTMLPanel>
+            <g:HTMLPanel>
+                <p style="font-weight: bold;">Rules:</p>
+                <g:ScrollPanel styleName="{style.rulesScrollPanel-DebugCard}">
+                    <g:VerticalPanel ui:field="rulesPanel"/>
+                </g:ScrollPanel>
+            </g:HTMLPanel>
+
+        </g:HorizontalPanel>
+
+        <g:FlowPanel ui:field="selectedRulesPanel"
+                     styleName="{style.rulesSelectedPanel-DebugCard} {style.cardItem-DebugCard}"/>
+
+        <g:Button
+                ui:field="runParsingButton"
+                text="RUN PARSING PROCESS"
+                styleName="btn btn-block btn-lg btn-primary {style.runParsingButton-DebugCard} {style.cardItem-DebugCard}"/>
+
+        <g:VerticalPanel ui:field="parseResultsPanel"
+                         width="100%"
+                         horizontalAlignment="ALIGN_CENTER"
+                         verticalAlignment="ALIGN_TOP"/>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

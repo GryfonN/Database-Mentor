@@ -1,0 +1,49 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="AdminHeaderViewImpl.css"/>
+
+    <g:HTMLPanel styleName="{style.mainHeader-AdminHeader}">
+
+        <g:VerticalPanel width="100%"
+                         horizontalAlignment="ALIGN_CENTER">
+
+            <g:HorizontalPanel
+                    styleName="{style.fistHeader-AdminHeader}"
+                    horizontalAlignment="ALIGN_CENTER">
+                <g:Image ui:field="logo"
+                         styleName="{style.logo-AdminHeader}"/>
+
+                <g:VerticalPanel styleName="{style.account-AdminHeader}" horizontalAlignment="ALIGN_RIGHT">
+                    <g:FlowPanel styleName="{style.headerInfoBackground-AdminHeader}">
+                        <g:Label ui:field="adminName"
+                                 styleName="fui-user {style.headerInfo-AdminHeader}"/>
+                        <g:Label ui:field="adminLastLogged"
+                                 styleName="fui-time {style.headerInfo-AdminHeader}"/>
+                        <g:Button ui:field="logoutButton"
+                                  styleName="btn btn-block btn-lg btn-danger {style.logoutBtn-AdminHeader}"
+                                  text="Log out"/>
+                    </g:FlowPanel>
+                </g:VerticalPanel>
+            </g:HorizontalPanel>
+
+            <!--btn bar-->
+            <g:HorizontalPanel width="1124px" horizontalAlignment="ALIGN_CENTER">
+                <g:Button ui:field="uploadButton"
+                          width="200px"
+                          text="UPLOAD"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-AdminHeader}"/>
+                <g:Button ui:field="bundlesButton"
+                          width="200px"
+                          text="BUNDLES"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-AdminHeader}"/>
+
+                <g:Button ui:field="configurationButton"
+                          width="200px"
+                          text="CONFIGURATION"
+                          styleName="btn btn-block btn-lg btn-primary {style.cardButton-AdminHeader}"/>
+            </g:HorizontalPanel>
+        </g:VerticalPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

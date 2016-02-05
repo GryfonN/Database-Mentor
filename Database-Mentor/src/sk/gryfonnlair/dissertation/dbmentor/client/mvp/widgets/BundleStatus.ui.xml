@@ -1,0 +1,27 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="BundleStatus.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.widgets.BundleStatus.MyStyle"/>
+
+    <g:HTMLPanel styleName="{style.main-BundleStatus}">
+        <img class="{style.bundleIcon-BundleStatus}" src="images/bundleIcon.png"/>
+
+        <g:ToggleButton ui:field="bundleToggleButton"
+                        styleName="{style.toogleButton-BundleStatus}">
+            <g:upFace>
+                <img src="images/bundleStatusOff.png"/>
+            </g:upFace>
+            <g:downFace>
+                <img src="images/bundleStatusOn.png"/>
+            </g:downFace>
+        </g:ToggleButton>
+
+        <g:Button ui:field="bundleDeleteButton"
+                  styleName="btn btn-block btn-lg btn-danger {style.deleteButton-BundleStatus}"
+                  text="DELETE"/>
+
+        <g:Label ui:field="bundleName"
+                 styleName="lato-font {style.bundleNameLabel-BundleStatus}"/>
+    </g:HTMLPanel>
+</ui:UiBinder>

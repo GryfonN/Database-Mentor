@@ -1,0 +1,42 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='database_mentor'>
+
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!--pre Ginjector dedenie-->
+    <inherits name="com.google.gwt.inject.Inject"/>
+    <!--prepisuje body background-->
+    <!--<inherits name='com.google.gwt.user.theme.standard.Standard'/>-->
+
+    <!-- MUSIM OD API CONVERTOVAT AJ GWTDTO OBJEKTY -->
+    <inherits name='sk.gryfonnlair.dissertation.dbmentor.api.DbConnector'/>
+    <!--CODEMIRROR BERIEM KNIZNICU-->
+    <inherits name="com.mastergaurav.codemirror.CodeMirror"/>
+
+    <entry-point class='sk.gryfonnlair.dissertation.dbmentor.client.DatabaseMentor'/>
+
+    <servlet path="/LoginService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.LoginServiceImpl"/>
+    <servlet path="/ProceduresService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.ProceduresServiceImpl"/>
+    <servlet path="/FunctionsService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.FunctionsServiceImpl"/>
+    <servlet path="/QuickService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.QuickServiceImpl"/>
+    <servlet path="/UploadSqlScript"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.UploadSqlScriptServlet"/>
+    <servlet path="/DebuggerService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.DebuggerServiceImpl"/>
+    <servlet path="/BundlesService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.BundlesServiceImpl"/>
+    <servlet path="/UploadService"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.UploadServiceImpl"/>
+    <servlet path="/UploadBundleFiles/*"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.UploadBundleFilesServlet"/>
+    <servlet path="/ConfigDefault"
+             class="sk.gryfonnlair.dissertation.dbmentor.server.services.ConfigDefaultServiceImpl"/>
+
+    <source path='client'/>
+    <source path='shared'/>
+</module>

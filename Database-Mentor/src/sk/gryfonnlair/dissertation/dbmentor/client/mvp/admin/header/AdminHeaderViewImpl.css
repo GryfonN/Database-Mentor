@@ -1,0 +1,99 @@
+.mainHeader-AdminHeader {
+    /*position: relative;*/
+    background: url("images/bg_header_admin_seamless.jpg") repeat fixed 50% 0px #2c3e50;
+    -webkit-box-shadow: inset 0px -8px 7px #242424;
+    -moz-box-shadow: inset 0px -8px 7px #242424;
+    -ms-box-shadow: inset 0px -8px 7px #242424;
+    -o-box-shadow: inset 0px -8px 7px #242424;
+    box-shadow: inset 0px -8px 7px #242424;
+    /*z-index: 0;*/
+}
+
+.fistHeader-AdminHeader {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-AdminHeader {
+    width: 722px;
+    height: 115px;
+    margin-top: 10px;
+}
+
+.account-AdminHeader {
+    width: 285px;
+    margin-top: 10px;
+}
+
+.headerInfoBackground-AdminHeader {
+    width: 220px !important;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    -webkit-box-shadow: 0px 0px 7px #000000;
+    -moz-box-shadow: 0px 0px 7px #000000;
+    -ms-box-shadow: 0px 0px 7px #000000;
+    -o-box-shadow: 0px 0px 7px #000000;
+    box-shadow: 0px 0px 7px #000000;
+}
+
+.headerInfo-AdminHeader {
+    display: block;
+    width: auto !important;
+    max-width: 220px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.logoutBtn-AdminHeader {
+    padding: 0px 20px !important;
+    margin: 3px 0px !important;
+    width: auto !important;
+    height: 30px;
+    font-weight: bold;
+}
+
+.cardButton-AdminHeader {
+    position: relative;
+    -webkit-box-shadow: 0px -6px 6px #242424;
+    -moz-box-shadow: 0px -6px 6px #242424;
+    -ms-box-shadow: 0px -6px 6px #242424;
+    -o-box-shadow: 0px -6px 6px #242424;
+    box-shadow: 0px -6px 6px #242424;
+    height: 50px;
+    margin-top: 5px;
+    -webkit-border-radius: 8px 8px 0px 0px !important;
+    -moz-bordert-radius: 8px 8px 0px 0px !important;
+    -ms-border-radius: 8px 8px 0px 0px !important;
+    -o-bordert-radius: 8px 8px 0px 0px !important;
+    border-radius: 8px 8px 0px 0px !important;
+    font-weight: bolder !important;
+    z-index: 1 !important;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+    /*aby som potlacil na klik rusenie tiena z flatUI*/
+.cardButton-AdminHeader:active,
+.cardButton-AdminHeader:hover {
+    -webkit-box-shadow: 0px -6px 6px #242424 !important;
+    -moz-box-shadow: 0px -6px 6px #242424 !important;
+    -ms-box-shadow: 0px -6px 6px #242424 !important;
+    -o-box-shadow: 0px -6px 6px #242424 !important;
+    box-shadow: 0px -6px 6px #242424 !important;
+    height: 55px;
+    margin-top: 0px;
+}
+
+.cardButton-AdminHeader:focus {
+    background-color: #1abc9c;
+}

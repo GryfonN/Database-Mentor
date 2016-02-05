@@ -1,0 +1,14 @@
+.main-AdminAppTemplate {
+    width: 100%;
+}
+
+.header-AdminAppTemplate {
+    padding: 0px;
+    width: 100%;
+}
+
+.content-AdminAppTemplate {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}

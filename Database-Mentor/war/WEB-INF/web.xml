@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <welcome-file-list>
+        <welcome-file>DatabaseMentor.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor LoginService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.LoginServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor ProceduresService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.ProceduresServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor FunctionsService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.FunctionsServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor QuickService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.QuickServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadSqlScript</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.UploadSqlScriptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor DebuggerService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.DebuggerServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor BundlesService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.BundlesServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadService</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.UploadServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadBundleFiles</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.UploadBundleFilesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor ConfigDefault</servlet-name>
+        <servlet-class>sk.gryfonnlair.dissertation.dbmentor.server.services.ConfigDefaultServiceImpl</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor LoginService</servlet-name>
+        <url-pattern>/database_mentor/LoginService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor ProceduresService</servlet-name>
+        <url-pattern>/database_mentor/ProceduresService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor FunctionsService</servlet-name>
+        <url-pattern>/database_mentor/FunctionsService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor QuickService</servlet-name>
+        <url-pattern>/database_mentor/QuickService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadSqlScript</servlet-name>
+        <url-pattern>/database_mentor/UploadSqlScript</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor DebuggerService</servlet-name>
+        <url-pattern>/database_mentor/DebuggerService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor BundlesService</servlet-name>
+        <url-pattern>/database_mentor/BundlesService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadService</servlet-name>
+        <url-pattern>/database_mentor/UploadService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor UploadBundleFiles</servlet-name>
+        <url-pattern>/database_mentor/UploadBundleFiles/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>sk.gryfonnlair.dissertation.dbmentor.DatabaseMentor ConfigDefault</servlet-name>
+        <url-pattern>/database_mentor/ConfigDefault</url-pattern>
+    </servlet-mapping>
+</web-app>

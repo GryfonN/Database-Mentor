@@ -1,0 +1,119 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <ui:style field="style" src="LoginViewImpl.css"
+              type="sk.gryfonnlair.dissertation.dbmentor.client.mvp.login.LoginViewImpl.MyStyle"/>
+
+    <g:HTMLPanel styleName="login-background" width="100%" height="100%">
+
+        <!--<g:VerticalPanel width="100%" horizontalAlignment="ALIGN_CENTER">-->
+        <g:Image ui:field="logo"
+                 styleName="{style.logo-Login}"/>
+        <!--</g:VerticalPanel>-->
+
+        <div id="loginWindow-Login">
+            <div class="{style.loginWindowGreen-Login}">
+
+
+                <div id="userCard">
+                    <div class="{style.login-icon-Login}">
+                        <g:Image ui:field="toAdmin"/>
+                        <h4>Welcome to
+                            <small>Database Mentor</small>
+                        </h4>
+                    </div>
+
+                    <div class="login-form">
+                        <!--bundle listbox-->
+                        <g:FlowPanel ui:field="listBoxPanel"
+                                     styleName="form-group btn dropdown-toggle clearfix {style.listBoxDIV-Login}"
+                                     visible="false">
+                            <g:ListBox ui:field="listBoxDatabaseTypes"
+                                       addStyleNames="{style.listBox-Login} lato-font"/>
+                        </g:FlowPanel>
+                        <g:Image ui:field="listBoxDatabaseTypesProgress"
+                                 styleName="form-group {style.listBoxProgressImage-Login}"
+                                 visible="true"/>
+                        <br/>
+                        <!--user name-->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxUserName"
+                                       styleName="form-control login-field"
+                                       text=""/>
+                            <label class="login-field-icon fui-user"/>
+                        </div>
+                        <!--user pass -->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxUserPass"
+                                       styleName="form-control login-field"
+                                       text=""/>
+                            <label class="login-field-icon fui-lock"/>
+                        </div>
+                        <!--url-->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxURL"
+                                       styleName="form-control login-field"
+                                       text=""/>
+                            <label class="login-field-icon fui-location"/>
+                        </div>
+                        <!--database-->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxDatabaseName"
+                                       styleName="form-control login-field"
+                                       text=""/>
+                            <label class="login-field-icon fui-checkbox-unchecked"/>
+                        </div>
+
+                        <g:Button ui:field="buttonLoginUser"
+                                  styleName="btn btn-block btn-lg btn-primary {style.loginButton-Login}"
+                                  text="Login"/>
+                        <g:Image ui:field="buttonLoginProgressUser"
+                                 styleName="{style.loginProgressImage-Login}"
+                                 visible="false"/>
+                    </div>
+                </div>
+
+                <div id="adminCard" style="display: none;">
+                    <div class="{style.login-icon-Login}">
+                        <g:Image ui:field="toUser"/>
+                        <h4>Back to
+                            <small>User login</small>
+                        </h4>
+                    </div>
+
+                    <div class="login-form">
+                        <!--admin name //TODO FOR TEST -  dat prec admin login udaje-->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxAdminName"
+                                       styleName="form-control login-field"
+                                       text="admin"/>
+                            <label class="login-field-icon fui-user"/>
+                        </div>
+                        <!--admin pass -->
+                        <div class="form-group">
+                            <g:TextBox ui:field="textBoxAdminPass"
+                                       styleName="form-control login-field"
+                                       text="admin00#"/>
+                            <label class="login-field-icon fui-lock"/>
+                        </div>
+
+                        <g:Button ui:field="buttonLoginAdmin"
+                                  styleName="btn btn-block btn-lg btn-primary {style.loginButton-Login}"
+                                  text="Login"/>
+                        <g:Image ui:field="buttonLoginProgressAdmin"
+                                 styleName="{style.loginProgressImage-Login}"
+                                 visible="false"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <g:TextBox ui:field="errorTextBox"
+                   styleName="{style.errorTextBox-Login}"
+                   visible="false"
+                   enabled="false"
+                   readOnly="true"/>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

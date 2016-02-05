@@ -1,0 +1,5 @@
+.onTop-GryfProgress {
+    position: relative;
+    top: -80px;
+    z-index: 500;
+}
